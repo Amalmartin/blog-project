@@ -15,26 +15,34 @@ Before you begin, ensure you have the following installed on your local machine:
 
 1. **Clone the repository:**
 
-   git clone https://github.com/amal332/Blog.git
-   cd Blog
+   git clone https://github.com/Amalmartin/blog-project.git
+   cd blog-project
 
-2. **Configure your .env file:**
+2. **Install PHP dependencies:**
 
-Set up your database connection details, including DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD.
+   composer install
 
-3. **Run database migration:**
+3. **Configure your .env file:**
+
+Create .env file and Copy the .env.example file to .env. Set up your database connection details, including DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD.
+
+4. **Generate an application key::**
+
+   php artisan key:generate
+
+4. **Run database migration:**
 
 php artisan migrate --seed
 
-4. **Compile assets:**
+5. **Compile assets:**
 
 npm install
 npm run dev
 
-5. **Start the server:**
+6. **Start the server:**
 
 php artisan serve
 
-6. **Start the app:**
+7. **Start the app:**
 
 http://localhost:8000
